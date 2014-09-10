@@ -16,6 +16,10 @@ body{
   padding-top: 70px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 footer{
   margin: @grid-gutter-width 0 0 0;
   padding: (@grid-gutter-width / 2) 0;
@@ -65,8 +69,26 @@ div.logo-main-div{
   min-width: 100px;
 }
 img.logo-main{
-  display: block;
+  position: relative;
+  width:750px;
+  margin-left: -375px;
+  left: 50%;
+}
+/* This is the testing area */
+
+/* The following three divs
+   Are for the the three floating blocks under the logo (of equal size) */
+
+.border-box{
+  border: solid 2px;
+
+  &:hover{
+    border-color: transparent;
+    background-color: #f8f5f0
+  }
+}
+.page-row{
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
 }
