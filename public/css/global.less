@@ -74,7 +74,6 @@ img.logo-main{
   margin-left: -375px;
   left: 50%;
 }
-/* This is the testing area */
 
 /* The following three divs
    Are for the the three floating blocks under the logo (of equal size) */
@@ -82,10 +81,13 @@ img.logo-main{
 .border-box{
   border: transparent 2px;
 
-  &:hover{
+  /*&:hover{
     border-color: transparent;
     background-color: #f8f5f0
-  }
+  }*/
+
+  border-color: transparent;
+  background-color: #f8f5f0
 }
 .page-row{
   max-width: 1024px;
@@ -95,6 +97,39 @@ img.logo-main{
 
 /* Glyphicon Configuration */
 
-.glyphicon-homepage{
-  font-size: 10em;
+// Icon
+i.icon-homepage{
+  font-size: 150px;
+  line-height: 200px;
+}
+
+/* Divs for icons */
+div.circle{
+
+  //Marula logo colour
+  //background-color: #FFB056;
+  background-color: white;
+  height:200px;
+  width:200px;
+  -moz-border-radius:200px;
+  -webkit-border-radius:100px;
+  border-color: #3e3f3a;
+  border: #3e3f3a 10px;
+  position: relative;
+  text-align:center;
+  //color:white;
+  line-height: 200px;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: sans-serif;
+
+  margin-left: -100px;
+  left:50%;
+
+  &:hover{
+  -webkit-transition: width 2s;
+  transition: width 2s;
+  border-color: transparent;
+  background-color: #FFB056;
+  }
 }
