@@ -11,9 +11,9 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 
         .collapse.navbar-collapse#navbar-top-collapse-1
             ul.nav.navbar-nav.navbar-left
-              li.active
+              li(class="#{ current.source == 'index' ? 'active' : '' }")
                 a(href=href="#{baseUrl}/") Home
-              li
+              li(class="#{ current.source == 'index' ? 'active' : '' }")
                 a(href="#{baseUrl}/docs") Documentation
             ul.nav.navbar-nav.navbar-right
 
