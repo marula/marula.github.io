@@ -12,10 +12,22 @@
 // Import flat bootstrap theme
 @import "themes/sandstone/theme";
 
+/*
+  Contents
+  ---------------------------------------------------
+  1. General (Standard stuff eg. body or .col-center)
+  2. Boilerplate (Included by default)
+  3. Navbar
+  4. Jumbotron (Site wide jumbotron styles)
+  5. Stuff (Things Carl did that Rick doesn't know where it all belongs)
+*/
+
+
+// 1 - General
+// --------------------------------------------------
+
 body{
-  padding-top: 70px;
   //acacia-trees.jpg
-  background-image: url('/images/forest-dark.jpg');
   //background-image: url('/images/acacia-trees.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,6 +36,14 @@ body{
 .text-center {
   text-align: center;
 }
+
+.col-center{
+  float: none;
+  margin: 0 auto;
+}
+
+// 2 - Boilerplate
+// --------------------------------------------------
 
 footer{
   margin: @grid-gutter-width 0 0 0;
@@ -65,6 +85,31 @@ article.article-docs{
   }
 }
 
+// 3 - Navbar
+// --------------------------------------------------
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-default {
+  background-color: @brand-success;
+}
+
+// 4 - Jumbotron
+// --------------------------------------------------
+
+.jumbotron{
+  background-color: @brand-success;
+  color: white;
+
+  font-family: @font-family-base;
+}
+
+
+// 5 - Stuff
+// --------------------------------------------------
+
 a.logo-homepage{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -90,11 +135,6 @@ img.logo-main{
   //background-color:rgba(248, 245, 240, 0.6);
   //height: 365px;
 
-}
-.page-row{
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Glyphicon Configuration */
@@ -132,11 +172,11 @@ div.circle{
   left:50%;
 
   &:hover{
-  -webkit-transition: background-color 0.5s, color 0.5s;
-  transition: background-color .5s, color 0.5s;
-  border-color: transparent;
-  background-color: #FFB056;
-  color: white;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    transition: background-color .5s, color 0.5s;
+    border-color: transparent;
+    background-color: @brand-secondary;
+    color: white;
   }
 }
 
