@@ -1,32 +1,25 @@
 //- 
-  This is the main homepage which will be rendered into HTML. The header and 
-  footer are in separate files, header.jade and footer.jade respectively.
-
-  At the moment, I'm trying to override links at the top, eg. to set the home
-  link to "active" if you are on the home page. 
+  This site is built with the Harp static generator.
+  Refer to www.harpjs.com for more info/docs. (Rick)
 
   NOTE: Make sure you turn on WORD WRAP in this file, whatever editor you are
-  using, or you are going to have a bad time.
+  using, or you are going to have a bad time. (Carl)
 
-  - Carl
+.jumbotron
+  //img.logo-main(src="/images/logo-header.png" alt="")
+  .container
+    .row.text-center
+      .col-sm-10.col-center
+        h1 Full-Stack Web Development
+        p A dedicated team of software engineers building robust solutions to suit your needs and keep you in the lead.
 
-//Link Overrides for main header
-
-
-//This jumbotron is going to be bigger, and contains the main logo but we'll probably switch it out for something more awesome later on.
-.jumbotron.transparent-container
-  img.logo-main(src="/images/logo-header.png" alt="")
-
-
-//Middle Section
-.container-fluid
-  .row.text-center.page-row
+.container
+  .row.text-center
     .col-sm-4.border-box.semi-transparent
       h1 Web Development
       a.circle-link(href="#")
         div.circle
           i.fa.fa-globe.icon-homepage
-      //Web Development
       h4 Gone are the days of building simple websites. Clients are demanding more functionality and better results from their websites.
 
     .col-sm-4.border-box.semi-transparent
@@ -34,7 +27,6 @@
       a.circle-link(href="#")
         div.circle
           i.fa.fa-cloud.icon-homepage
-      //Software Solutions
       h4 With our dedicated software development team and a little know-how, getting your web-app idea running will be a breeze.
 
     .col-sm-4.border-box.semi-transparent
@@ -42,13 +34,11 @@
       a.circle-link(href="#")
         div.circle
           i.fa.fa-mobile.icon-homepage
-      //Mobile Apps
       h4 Need iPhone / Android app development for your project? We've got you covered! Click here to find out more.
   //div.separator-small
   .row.text-center.page-row
     .col-sm-12.semi-transparent.padded-box
       a.btn.btn-default.btn-lg(href="#{baseUrl}/projects") View All of our projects
-//Separate for 48 pixels
 div.separator-main
 
 div
