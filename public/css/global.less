@@ -14,7 +14,9 @@
 
 body{
   padding-top: 70px;
+  //acacia-trees.jpg
   background-image: url('/images/forest-dark.jpg');
+  //background-image: url('/images/acacia-trees.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -83,14 +85,11 @@ img.logo-main{
 
 .border-box{
   border: transparent 2px;
-
-  /*&:hover{
-    border-color: transparent;
-    background-color: #f8f5f0
-  }*/
-
   border-color: transparent;
-  background-color: #f8f5f0
+  background-color: #f8f5f0;
+  //background-color:rgba(248, 245, 240, 0.6);
+  //height: 365px;
+
 }
 .page-row{
   max-width: 1024px;
@@ -114,7 +113,7 @@ div.circle{
 
   //Marula logo colour
   //background-color: #FFB056;
-  background-color: white;
+  background-color: transparent;
   height:200px;
   width:200px;
   -moz-border-radius:200px;
@@ -147,18 +146,35 @@ a.circle-link{
 }
 
 //Adds whitespace to match the theme
-div.separator{
+div.separator-main{
   height: 48px;
 }
-
-.tiled-style1{
-  /*background-image: url('/images/vector-white.jpg');
-  background-repeat: repeat;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;*/
+div.separator-small{
+  height: 20px;
 }
+//Adds padding for text
+.padded-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .transparent-container{
   background-color: transparent;
 }
+.semi-transparent{
+  background-color:rgba(255, 255, 255, 0.7);
+}
+//centers a column in a row
+.col-center{
+  float: none;
+  margin: 0 auto;
+}
+.text-center{
+  text-align:center;
+}
+img.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+//

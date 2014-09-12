@@ -14,47 +14,46 @@
 
 
 //This jumbotron is going to be bigger, and contains the main logo but we'll probably switch it out for something more awesome later on.
-.jumbotron.tiled-style1.transparent-container
+.jumbotron.transparent-container
   img.logo-main(src="/images/logo-header.png" alt="")
 
 
-
-.container-fluid.tiled-style1
+//Middle Section
+.container-fluid
   .row.text-center.page-row
-    .col-sm-4.border-box 
-      //First Column
-
+    .col-sm-4.border-box.semi-transparent
       h1 Web Development
-      //i.glyphicon.glyphicon-cutlery.glyphicon-homepage
-      a.circle-link(href="#{baseUrl}/bootswatch/bswatchsc")
+      a.circle-link(href="#")
         div.circle
           i.fa.fa-globe.icon-homepage
+      //Web Development
+      h4 Gone are the days of building simple websites. Clients are demanding more functionality and better results from their websites.
 
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ullamcorper metus, quis congue eros. Integer posuere risus vel ex sagittis efficitur. Mauris at ornare mauris. Praesent facilisis dolor eu mauris consequat sagittis. Fusce eu neque eu massa porttitor tincidunt. Phasellus finibus nunc justo, ornare varius magna vestibulum eget. Mauris in neque vitae nibh egestas varius ut et sapien. Aliquam orci enim, vestibulum eu arcu vel, volutpat tempor felis. Cras at ex velit. Praesent laoreet fringilla augue, id feugiat nisl commodo in. Etiam dignissim, est quis maximus lobortis, mi dolor volutpat tortor, pellentesque ullamcorper elit nisi nec augue. Vestibulum velit sapien, feugiat et efficitur in, ullamcorper quis sapien. Sed euismod tortor leo.
-
-    .col-sm-4.border-box
-      //Second Column
-
+    .col-sm-4.border-box.semi-transparent
       h1 Software Solutions
-      a.circle-link(href="#{baseUrl}/bootswatch/bswatchsc")
+      a.circle-link(href="#")
         div.circle
           i.fa.fa-cloud.icon-homepage
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ullamcorper metus, quis congue eros. Integer posuere risus vel ex sagittis efficitur. Mauris at ornare mauris. Praesent facilisis dolor eu mauris consequat sagittis. Fusce eu neque eu massa porttitor tincidunt. Phasellus finibus nunc justo, ornare varius magna vestibulum eget. Mauris in neque vitae nibh egestas varius ut et sapien. Aliquam orci enim, vestibulum eu arcu vel, volutpat tempor felis. Cras at ex velit. Praesent laoreet fringilla augue, id feugiat nisl commodo in. Etiam dignissim, est quis maximus lobortis, mi dolor volutpat tortor, pellentesque ullamcorper elit nisi nec augue. Vestibulum velit sapien, feugiat et efficitur in, ullamcorper quis sapien. Sed euismod tortor leo.
+      //Software Solutions
+      h4 With our dedicated software development team and a little know-how, getting your web-app idea running will be a breeze.
 
-    .col-sm-4.border-box
-      //Third Column
-
+    .col-sm-4.border-box.semi-transparent
       h1 Mobile Apps
-      a.circle-link(href="#{baseUrl}/bootswatch/bswatchsc")
+      a.circle-link(href="#")
         div.circle
           i.fa.fa-mobile.icon-homepage
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ullamcorper metus, quis congue eros. Integer posuere risus vel ex sagittis efficitur. Mauris at ornare mauris. Praesent facilisis dolor eu mauris consequat sagittis. Fusce eu neque eu massa porttitor tincidunt. Phasellus finibus nunc justo, ornare varius magna vestibulum eget. Mauris in neque vitae nibh egestas varius ut et sapien. Aliquam orci enim, vestibulum eu arcu vel, volutpat tempor felis. Cras at ex velit. Praesent laoreet fringilla augue, id feugiat nisl commodo in. Etiam dignissim, est quis maximus lobortis, mi dolor volutpat tortor, pellentesque ullamcorper elit nisi nec augue. Vestibulum velit sapien, feugiat et efficitur in, ullamcorper quis sapien. Sed euismod tortor leo.
-div.separator
+      //Mobile Apps
+      h4 Need iPhone / Android app development for your project? We've got you covered! Click here to find out more.
+  //div.separator-small
+  .row.text-center.page-row
+    .col-sm-12.semi-transparent.padded-box
+      a.btn.btn-default.btn-lg(href="#{baseUrl}/projects") View All of our projects
+//Separate for 48 pixels
+div.separator-main
 
 div
-  .jumbotron
+  .jumbotron.semi-transparent
     .row.text-center.page-row
-      
-        p
-          "This is a test paragraph."
-  <div class="progress-bar" style="width: 45%"></div>
+      p
+        "This is a test paragraph."
+
