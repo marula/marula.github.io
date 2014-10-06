@@ -1,5 +1,5 @@
 # Marula.io Website
-Web presence for Marula a software engineering company from South Africa.
+Web presence for Marula, a software engineering company from South Africa.
 
 ## Setup
 
