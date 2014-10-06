@@ -1,14 +1,18 @@
 # Marula.io Website
 Web presence for Marula, a software engineering company from South Africa.
 
-## Setup
+## Dependencies
 
-First make sure you have Harp and Bower installed:
+To run this site you need Harp and Bower installed.
+Both are npm modules:
 
 ```sh
 $ sudo npm install -g harp
 $ sudo npm install -g bower
 ```
+## Setup
+
+After installing all dependencies you can continue with the setup.
 
 Download Bootstrap using bower:
 
