@@ -5,30 +5,17 @@
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href='#{baseUrl}/') Marula.io
+      a.navbar-brand(href='#{baseUrl}/')
+        img.logo-nav(src="/images/logo.png" alt="")
     .navbar-collapse.collapse.navbar-inverse-collapse
       ul.nav.navbar-nav.navbar-right
         li(class="#{ current.source == 'index' ? 'active' : '' }")
           a(href=href="#{baseUrl}/") Home
         li(class="#{ current.source == 'projects' ? 'active' : '' }")
-          a(href=href="#{baseUrl}/projects") Projects
+          a(href=href="#{baseUrl}/pages/projects") Projects
         li(class="#{ current.source == 'news' ? 'active' : '' }")
-          a(href=href="#{baseUrl}/news") News
+          a(href=href="#{baseUrl}/pages/news") News
         li(class="#{ current.source == 'about-us' ? 'active' : '' }")
-          a(href=href="#{baseUrl}/about-us") About Us
+          a(href=href="#{baseUrl}/pages/about-us") About Us
         li(class="#{ current.source == 'documentation' ? 'active' : '' }")
           a(href="#{baseUrl}/docs/documentation") Documentation
-        li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown')
-            | Dropdown
-            b.caret
-          ul.dropdown-menu
-            li
-              a(href='#') Action
-            li
-              a(href='#') Another action
-            li
-              a(href='#') Something else here
-            li.divider
-            li
-              a(href='#') Separated link

@@ -1,18 +1,15 @@
 {
-  "name": "hb-bootstrap",
-  "version": "0.3.0",
-  "homepage": "https://github.com/jvandemo/hb-bootstrap",
+  "name": "Marula.io",
+  "homepage": "https://github.com/Marula",
   "authors": [
-    "Jurgen Van de Moere <jurgen.van.de.moere@gmail.com>"
+    "Marula.io"
   ],
-  "description": "Harp Boilerplate of a Bootstrap website",
+  "description": "Marula Public Website",
   "keywords": [
-    "harp",
-    "boilerplate",
-    "bootstrap"
+    "Marula",
+    "Web Devleopment",
+    "Full Stack"
   ],
-  "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",

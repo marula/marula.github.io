@@ -1,15 +1,11 @@
 doctype html
 html
-    head
-        != partial("_partials/head")
+  head
+    != partial("_partials/head")
 
-    body
+  body
+    main
+      != yield
 
-        header
-            != partial("_partials/header")
-
-        main
-            != yield
-
-        footer
-            != partial("_partials/footer")
+    footer
+      != partial("_partials/footer")

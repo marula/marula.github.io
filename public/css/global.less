@@ -15,20 +15,20 @@
 /*
   Contents
   ---------------------------------------------------
-  1. General (Standard stuff eg. body or .col-center)
-  2. Boilerplate (Included by default)
-  3. Navbar
-  4. Jumbotron (Site wide jumbotron styles)
-  5. Stuff (Things Carl did that Rick doesn't know where it all belongs)
+  - General (Standard stuff eg. body or .col-center)
+  - Boilerplate (Included by default)
+  - Navbar
+  - Jumbotron (Site wide jumbotron styles)
+  - Map
+  - Footer
+  - Stuff (Things Carl did that Rick doesn't know where it all belongs)
 */
 
 
-// 1 - General
+// General
 // --------------------------------------------------
 
 body{
-  //acacia-trees.jpg
-  //background-image: url('/images/acacia-trees.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -42,7 +42,23 @@ body{
   margin: 0 auto;
 }
 
-// 2 - Boilerplate
+hr {
+  border-top: 1px solid @gray-dark;
+}
+
+
+.logo-main{
+  position: relative;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+}
+
+// - General
+
+
+
+// Boilerplate
 // --------------------------------------------------
 
 footer{
@@ -85,7 +101,11 @@ article.article-docs{
   }
 }
 
-// 3 - Navbar
+// - Boilerplate
+
+
+
+// Navbar
 // --------------------------------------------------
 
 .navbar {
@@ -93,36 +113,83 @@ article.article-docs{
 }
 
 .navbar-default {
-  background-color: @brand-success;
+  background-color: @gray-light;
 }
 
-// 4 - Jumbotron
+.logo-nav {
+  height: 40px;
+}
+
+// - Navbar
+
+
+
+// Jumbotron
 // --------------------------------------------------
 
 .jumbotron{
-  background-color: @brand-success;
-  color: white;
+  background-color: @gray-lighter;
+  color: @gray-dark;
 
   font-family: @font-family-base;
 }
+// - Jumbotron
 
 
-// 5 - Stuff
+
+
+// Map
+// --------------------------------------------------
+#map {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+// Footer
+// --------------------------------------------------
+
+footer {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background: @gray-lighter;
+  color: @gray-darker;
+  text-align: left;
+
+  a {
+    color: @gray-darker;
+
+    &:hover {
+      color: @gray-dark;
+    }
+  }
+
+  .address {
+    text-align: right;
+  }
+}
+
+.logo-footer {
+  position: relative;
+  left: 50%;
+  margin-left: -131px;
+  width: 262px;
+  height: 40px;
+}
+
+// - Footer
+
+
+
+// Stuff
 // --------------------------------------------------
 
 a.logo-homepage{
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
-}
-div.logo-main-div{
-  min-width: 100px;
-}
-img.logo-main{
-  position: relative;
-  width:750px;
-  margin-left: -375px;
-  left: 50%;
 }
 
 /* The following three divs
@@ -175,7 +242,7 @@ div.circle{
     -webkit-transition: background-color 0.5s, color 0.5s;
     transition: background-color .5s, color 0.5s;
     border-color: transparent;
-    background-color: @brand-secondary;
+    background-color: #FAAF40;
     color: white;
   }
 }
@@ -187,13 +254,9 @@ a.circle-link{
 
 //Adds whitespace to match the theme
 div.separator-main{
-  height: 125px;
   margin-top: 20px;
-  //margin-bottom: 20px;
-  //background-color: rgb(62, 63, 58); -- Baobab Grey
-  //--Baobab Bright Green
-  //background-color: #93c54b;
-  background-color: @brand-success; 
+  padding-bottom: 20px;
+  background-color: @gray-lighter;
 }
 div.separator-white{
   height: 125px;
@@ -202,7 +265,7 @@ div.separator-white{
   //background-color: rgb(62, 63, 58); -- Baobab Grey
   //--Baobab Bright Green
   //background-color: #93c54b;
-  background-color: transparent; 
+  background-color: transparent;
 }
 div.separator-small{
   height: 20px;
@@ -230,7 +293,7 @@ div.separator-small{
 img.centered-image {
     display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto
 }
 
 .text-justified{
@@ -240,7 +303,7 @@ img.centered-image {
 div.ctr-webdev{
   //background-image: url('/images/black-holes.jpg');
   //height: 1000px;
-  
+
 }
 img.h1-inline{
   position: absolute;
@@ -259,4 +322,22 @@ div.placeholder{
   vertical-align: middle;
   line-height: 150px;
 }
-//
+
+// - Stuff
+
+
+
+// Media Queries
+// --------------------------------------------------
+
+@media (min-width: @screen-sm-min) {
+  .logo-main {
+    position: relative;
+    width: 750px;
+    margin-left: -375px;
+    left: 50%;
+  }
+}
+
+// Media Queries
+
