@@ -229,7 +229,7 @@ div.circle{
   border: #3e3f3a 10px;
   position: relative;
   text-align:center;
-  //color:white;
+  color: @gray;
   line-height: 200px;
   font-weight: bold;
   font-size: 22px;
@@ -249,7 +249,7 @@ div.circle{
 
 //Changes the font colour in the link to match the div it contains:
 a.circle-link{
-  color: #3e3f3a;
+  color: @gray-darker;
 }
 
 //Adds whitespace to match the theme
@@ -333,9 +333,10 @@ div.placeholder{
 @media (min-width: @screen-sm-min) {
   .logo-main {
     position: relative;
-    width: 750px;
-    margin-left: -375px;
+    width: 800px;
+    margin-left: -500px;
     left: 50%;
+    padding-bottom: 50px;
   }
 }
 
