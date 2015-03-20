@@ -4,7 +4,8 @@ function initialize() {
   var mapOptions = {
     center: location,
     zoom: 15,
-    scrollwheel: false
+    scrollwheel: false,
+    draggable: false
   };
 
   var map = new google.maps.Map(document.getElementById('map'),
