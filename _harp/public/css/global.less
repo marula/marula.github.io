@@ -49,9 +49,8 @@ hr {
 
 .logo-main{
   position: relative;
-  left: 50%;
-  margin-left: -150px;
-  width: 300px;
+  left: 10%;
+  width: 80%;
 }
 
 // - General
@@ -60,14 +59,6 @@ hr {
 
 // Boilerplate
 // --------------------------------------------------
-
-footer{
-  margin: @grid-gutter-width 0 0 0;
-  padding: (@grid-gutter-width / 2) 0;
-  border-top: 1px solid @well-border;
-  text-align: center;
-}
-
 ul.nav-docs{
   margin-top: 60px;
   h1{
@@ -128,8 +119,8 @@ article.article-docs{
 // --------------------------------------------------
 
 .jumbotron{
-  background-color: @gray-lighter;
-  color: @gray-dark;
+  background-color: @gray-darker;
+  color: white;
 
   font-family: @font-family-base;
 }
@@ -150,19 +141,24 @@ article.article-docs{
 // --------------------------------------------------
 
 footer {
+  margin: @grid-gutter-width 0 0 0;
+  padding: (@grid-gutter-width / 2) 0;
+  border-top: 1px solid @well-border;
+  text-align: center;
+
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
 
-  background: @gray-lighter;
-  color: @gray-darker;
+  background: @gray-darker;
+  color: white;
   text-align: left;
 
   a {
-    color: @gray-darker;
+    color: white;
 
     &:hover {
-      color: @gray-dark;
+      color: white;
     }
   }
 
@@ -229,7 +225,7 @@ div.circle{
   border: #3e3f3a 10px;
   position: relative;
   text-align:center;
-  color: @gray;
+  color: @gray-dark;
   line-height: 200px;
   font-weight: bold;
   font-size: 22px;
@@ -256,7 +252,8 @@ a.circle-link{
 div.separator-main{
   margin-top: 20px;
   padding-bottom: 20px;
-  background-color: @gray-lighter;
+  background-color: @gray-darker;
+  color: white;
 }
 div.separator-white{
   height: 125px;
@@ -332,13 +329,10 @@ div.placeholder{
 
 @media (min-width: @screen-sm-min) {
   .logo-main {
-    position: relative;
-    width: 800px;
-    margin-left: -500px;
-    left: 50%;
-    padding-bottom: 50px;
+    left: 25%;
+    width: 50%;
+    margin: 150px 0;
   }
 }
 
 // Media Queries
-
