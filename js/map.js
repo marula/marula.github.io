@@ -1,5 +1,5 @@
 function initialize() {
-  var location = {lat: -33.9370833, lng: 18.8626944};
+  var location = {lat: -33.936005, lng: 18.860582};
 
   var mapOptions = {
     center: location,
